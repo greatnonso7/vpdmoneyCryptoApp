@@ -3,13 +3,14 @@ import { View, Text } from 'react-native';
 
 import { COLORS, FONTS, SIZES } from '../constants';
 
-const HeaderBar = ({ title }) => {
+const HeaderBar = ({ title, containerStyle }) => {
   return (
     <View
       style={{
         height: 100,
         paddingHorizontal: SIZES.radius,
         justifyContent: 'flex-end',
+        ...containerStyle,
       }}
     >
       <Text style={{ color: COLORS.white, ...FONTS.largeTitle }}>{title}</Text>
