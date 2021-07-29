@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* CryptoWalletAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CryptoWalletAppTests.m */; };
+		04796B9C26B35130002262D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04796B9B26B35130002262D9 /* GoogleService-Info.plist */; };
 		072955499347448680DD1B96 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A3D3F2512AB4D72A68F14BE /* Roboto-Italic.ttf */; };
 		12A6BFA2AD2047079AA47B4C /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3FF89B210CD487C84C11897 /* Roboto-MediumItalic.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
@@ -50,6 +51,7 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* CryptoWalletAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryptoWalletAppTests.m; sourceTree = "<group>"; };
 		020B8E41BF43475AAF82AC6F /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BlackItalic.ttf"; path = "../src/assets/fonts/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		04796B9B26B35130002262D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		05360B7F9A5B4E3CB17DE36E /* Roboto-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Thin.ttf"; path = "../src/assets/fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		0B7F20AF82CF4CA8AE35562A /* RobotoCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "RobotoCondensed-BoldItalic.ttf"; path = "../assets/fonts/RobotoCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
 		0BBB14E7DDB4436BA208AF62 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				04796B9B26B35130002262D9 /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* CryptoWalletApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* CryptoWalletAppTests */,
@@ -391,6 +394,7 @@
 				B4B60ED1C8334189A230D66D /* RobotoCondensed-BoldItalic.ttf in Resources */,
 				40357C4F814F4C1ABC0A5F86 /* RobotoCondensed-Italic.ttf in Resources */,
 				822F7A9CF3244D8B9D6AC7A0 /* RobotoCondensed-Light.ttf in Resources */,
+				04796B9C26B35130002262D9 /* GoogleService-Info.plist in Resources */,
 				E1E06668124D4074ABEDC88E /* RobotoCondensed-LightItalic.ttf in Resources */,
 				E6543CCC5CE6466E8732DF9E /* RobotoCondensed-Regular.ttf in Resources */,
 			);

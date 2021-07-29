@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, TextInput, StyleSheet, Dimensions } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { hp } from './responsive-dimension';
+import { deviceWidth, hp } from './responsive-dimension';
 
 const { width } = Dimensions.get('screen');
 
@@ -22,8 +22,8 @@ const styles = StyleSheet.create({
   formControl: {
     flexDirection: 'row',
     backgroundColor: '#FFFFFF',
-    width: hp(330),
-    height: hp(50),
+    width: deviceWidth * 0.89,
+    height: hp(60),
     borderRadius: hp(10),
     marginBottom: hp(40),
   },

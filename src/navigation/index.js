@@ -1,14 +1,13 @@
 import React from 'react';
-import { createStackNavigator } from '@react-navigation/stack';
-import Auth from './auth';
-// import Account from './account';
+import { AuthProvider } from './AuthProvider';
+import Routes from './Routes';
 
-const Stack = createStackNavigator();
-
-export const AppNavigation = () => {
+const Providers = () => {
   return (
-    <Stack.Navigator headerMode="none">
-      <Stack.Screen name="Auth" component={Auth} />
-    </Stack.Navigator>
+    <AuthProvider>
+      <Routes />
+    </AuthProvider>
   );
 };
+
+export default Providers;

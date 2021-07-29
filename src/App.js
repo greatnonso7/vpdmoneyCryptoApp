@@ -7,27 +7,14 @@ import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import rootReducer from './store/rootReducer';
 
-import { AppNavigation } from './navigation';
-// import Tabs from './navigation/tabs';
-
-const Stack = createStackNavigator();
+import Providers from './navigation';
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
 const App = () => {
   return (
     <Provider store={store}>
-      <NavigationContainer>
-        {/* <Stack.Navigator
-          screenOptions={{
-            headerShown: false,
-          }}
-          initialRouteName={'MainLayout'}
-        >
-          <Stack.Screen name="MainLayout" component={Tabs} />
-      </Stack.Navigator> */}
-        <AppNavigation />
-      </NavigationContainer>
+      <Providers />
     </Provider>
   );
 };

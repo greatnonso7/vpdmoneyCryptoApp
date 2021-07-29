@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "126037457754",
+    "project_id": "cryptoappvpd",
+    "storage_bucket": "cryptoappvpd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126037457754:android:a4c6c11ccf3ad1cc3b9163",
+        "android_client_info": {
+          "package_name": "com.cryptowalletapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126037457754-di8ftqobeufbul39vpq6b0cvo3mboh1u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5Kp0Gk_adHFn5_VkaE8At7H6BAILczDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126037457754-di8ftqobeufbul39vpq6b0cvo3mboh1u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "126037457754-8oqq2ksrnntkcf0o22bfc119974tc9i0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.CryptoWalletApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
