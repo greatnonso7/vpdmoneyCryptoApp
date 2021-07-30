@@ -62,7 +62,7 @@ const Setting = ({ title, value, type, onPress }) => {
 
 const Profile = () => {
   const [faceId, setFaceId] = React.useState(true);
-  const { user } = useContext(AuthContext);
+  const { user, logout } = useContext(AuthContext);
 
   return (
     <MainLayout>
@@ -151,10 +151,10 @@ const Profile = () => {
             onPress={() => console.log('press')}
           />
           <Setting
-            title="2-Factor Authentication"
+            title="Logout"
             value=""
             type="button"
-            onPress={() => console.log('press')}
+            onPress={() => logout()}
           />
         </ScrollView>
       </View>
