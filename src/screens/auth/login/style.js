@@ -9,7 +9,12 @@ export const styles = StyleSheet.create({
     paddingTop: hp(15),
   },
   body: {
-    marginHorizontal: SIZES.padding,
+    marginHorizontal: hp(20),
     marginTop: SIZES.padding * 3,
+  },
+  appText: {
+    ...FONTS.h2,
+    textAlign: 'center',
+    color: COLORS.darkBrown,
   },
 });

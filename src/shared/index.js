@@ -5,6 +5,7 @@ import Chart from './Chart';
 import HeaderBar from './HeaderBar';
 import TextButton from './TextButton';
 import InputText from './InputText';
+import FormButton from './FormButton';
 
 export {
   TabIcon,
@@ -14,4 +15,5 @@ export {
   HeaderBar,
   TextButton,
   InputText,
+  FormButton,
 };

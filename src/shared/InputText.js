@@ -6,9 +6,15 @@ import { COLORS, FONTS, SIZES } from '../constants';
 
 const { width } = Dimensions.get('screen');
 
-const InputText = ({ iconName, placeholder, labelValue, ...rest }) => {
+const InputText = ({
+  iconName,
+  placeholder,
+  labelValue,
+  containerStyle,
+  ...rest
+}) => {
   return (
-    <View style={styles.formControl}>
+    <View style={[styles.formControl, { ...containerStyle }]}>
       <View style={styles.iconStyle}>
         <Ionicons style={styles.formIcon} name={iconName} size={25} />
       </View>
@@ -31,7 +37,6 @@ const styles = StyleSheet.create({
     width: deviceWidth * 0.89,
     height: hp(60),
     borderWidth: hp(1),
-    borderColor: COLORS.darkBrown,
     borderRadius: hp(10),
     marginBottom: hp(40),
   },
