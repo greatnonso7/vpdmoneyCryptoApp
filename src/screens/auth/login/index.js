@@ -8,8 +8,8 @@ import { styles } from './style';
 import { AuthContext } from '../../../navigation/AuthProvider';
 
 const Login = () => {
-  const [email, setEmail] = useState('greatchinonso7@gmail.com');
-  const [password, setPassword] = useState('12345678');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   const [emailError, setEmailError] = useState(false);
   const [passwordError, setpasswordError] = useState(false);
@@ -32,7 +32,6 @@ const Login = () => {
     }
   };
 
-  console.log(error, 'error');
   return (
     <View style={styles.container}>
       <HeaderBar

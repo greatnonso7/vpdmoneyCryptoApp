@@ -64,7 +64,6 @@ const Profile = () => {
   const [faceId, setFaceId] = React.useState(true);
   const { user } = useContext(AuthContext);
 
-  console.log(user);
   return (
     <MainLayout>
       <View

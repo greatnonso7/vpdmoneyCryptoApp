@@ -20,7 +20,6 @@ const Onboarding = ({ navigation: { navigate } }) => {
     const { currentPage } = sliderState;
     const { x } = event.nativeEvent.contentOffset;
     const indexOfNextScreen = Math.floor(x / deviceWidth);
-    console.log(indexOfNextScreen);
     if (indexOfNextScreen !== currentPage) {
       setSliderState({
         ...sliderState,

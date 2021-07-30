@@ -9,8 +9,6 @@ const Routes = () => {
   const { user, setUser } = useContext(AuthContext);
   const [initializing, setInitializing] = useState(true);
 
-  console.log(user);
-
   const onAuthStateChanged = (user) => {
     setUser(user);
     if (initializing) setInitializing(false);
