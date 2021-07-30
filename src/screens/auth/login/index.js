@@ -8,13 +8,13 @@ import { styles } from './style';
 import { AuthContext } from '../../../navigation/AuthProvider';
 
 const Login = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('greatchinonso7@gmail.com');
+  const [password, setPassword] = useState('12345678');
 
   const [emailError, setEmailError] = useState(false);
   const [passwordError, setpasswordError] = useState(false);
 
-  const { login } = useContext(AuthContext);
+  const { login, error } = useContext(AuthContext);
 
   const submitForm = () => {
     if (!password) {
@@ -32,8 +32,7 @@ const Login = () => {
     }
   };
 
-  console.log(emailError, passwordError);
-
+  console.log(error, 'error');
   return (
     <View style={styles.container}>
       <HeaderBar
@@ -102,6 +101,12 @@ const Login = () => {
           >
             {'Password is required'}
           </Text>
+        )}
+
+        {error && (
+          <View style={styles.errorBox}>
+            <Text style={styles.errorText}>{[error]}</Text>
+          </View>
         )}
 
         <FormButton

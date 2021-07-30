@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { COLORS, FONTS, SIZES } from '../../../constants';
-import { hp } from '../../../shared/responsive-dimension';
+import { hp, wp } from '../../../shared/responsive-dimension';
 
 export const styles = StyleSheet.create({
   container: {
@@ -16,5 +16,16 @@ export const styles = StyleSheet.create({
     ...FONTS.h2,
     textAlign: 'center',
     color: COLORS.darkBrown,
+  },
+  errorBox: {
+    height: hp(40),
+    width: wp(330),
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: COLORS.red,
+  },
+  errorText: {
+    ...FONTS.h4,
+    color: COLORS.white,
   },
 });
