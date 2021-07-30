@@ -291,7 +291,7 @@ const Market = ({ coins, getCoinMarket }) => {
         <HeaderBar title="Market" />
 
         {renderTabBar()}
-        {renderButtons()}
+        {/* {renderButtons()} */}
         {renderList()}
       </View>
     </MainLayout>
