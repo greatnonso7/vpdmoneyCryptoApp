@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {
   View,
   Text,
@@ -11,6 +11,7 @@ import {
 import { MainLayout } from './';
 import { HeaderBar } from '../shared';
 import { COLORS, dummyData, FONTS, icons, SIZES } from '../constants';
+import { AuthContext } from '../navigation/AuthProvider';
 
 const SectionTitle = ({ title }) => {
   return (
@@ -61,6 +62,9 @@ const Setting = ({ title, value, type, onPress }) => {
 
 const Profile = () => {
   const [faceId, setFaceId] = React.useState(true);
+  const { user } = useContext(AuthContext);
+
+  console.log(user);
   return (
     <MainLayout>
       <View
@@ -76,7 +80,7 @@ const Profile = () => {
           <View style={{ flexDirection: 'row', marginTop: SIZES.radius }}>
             <View style={{ flex: 1 }}>
               <Text style={{ color: COLORS.white, ...FONTS.h3 }}>
-                {dummyData.profile.email}
+                {user.email}
               </Text>
               <Text style={{ color: COLORS.lightGray3, ...FONTS.h4 }}>
                 ID: {dummyData.profile.id}
