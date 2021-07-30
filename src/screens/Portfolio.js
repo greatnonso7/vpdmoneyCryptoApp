@@ -17,6 +17,11 @@ const Portfolio = ({ getHoldings, myHoldings }) => {
     }, [])
   );
 
+  const formatAmount = (value) =>
+    Number(value)
+      .toFixed(2)
+      .replace(/\d(?=(\d{3})+\.)/g, '$&,');
+
   let totalWallet = myHoldings.reduce((a, b) => a + (b.total || 0), 0);
 
   let valueChange = myHoldings.reduce(
@@ -43,7 +48,7 @@ const Portfolio = ({ getHoldings, myHoldings }) => {
         </Text>
         <BalanceInfo
           title="Current Balance"
-          displayAmount={totalWallet}
+          displayAmount={formatAmount(totalWallet)}
           changePct={percChange}
           containerStyle={{
             marginTop: SIZES.radius,
@@ -145,7 +150,7 @@ const Portfolio = ({ getHoldings, myHoldings }) => {
                       lineHeight: 15,
                     }}
                   >
-                    ₦{item.current_price.toLocaleString()}
+                    ₦{formatAmount(item.current_price.toLocaleString())}
                   </Text>
                   <View
                     style={{
@@ -189,7 +194,7 @@ const Portfolio = ({ getHoldings, myHoldings }) => {
                       lineHeight: 15,
                     }}
                   >
-                    ₦{item.total.toLocaleString()}
+                    ₦{formatAmount(item.total.toLocaleString())}
                   </Text>
                   <Text
                     style={{

@@ -45,7 +45,7 @@ const Home = ({ getHoldings, getCoinMarket, myHoldings, coins }) => {
         {/** Balance info */}
         <BalanceInfo
           title="Your Wallet"
-          displayAmount={totalWallet}
+          displayAmount={formatAmount(totalWallet)}
           changePct={percChange}
           containerStyle={{ marginTop: 50 }}
         />
