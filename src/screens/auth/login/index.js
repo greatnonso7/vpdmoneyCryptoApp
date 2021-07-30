@@ -1,9 +1,9 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-import { COLORS, FONTS } from '../../constants';
-import { hp } from '../../shared/responsive-dimension';
-import { HeaderBar, InputText } from '../../shared';
+import { COLORS, FONTS } from '../../../constants';
+import { hp } from '../../../shared/responsive-dimension';
+import { HeaderBar, InputText } from '../../../shared';
 import { styles } from './style';
 
 const Onboarding = () => {
@@ -15,6 +15,9 @@ const Onboarding = () => {
           justifyContent: 'center',
           alignItems: 'center',
           marginTop: hp(40),
+        }}
+        textStyle={{
+          color: COLORS.darkBrown,
         }}
       />
 

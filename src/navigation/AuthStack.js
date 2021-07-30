@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 // import SignupScreen from '../screens/SignupScreen';
-// import LoginScreen from '../screens/LoginScreen';
+import LoginScreen from '../screens/auth/login';
 import OnboardingScreen from '../screens/auth';
 
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
@@ -41,11 +41,11 @@ const AuthStack = () => {
         component={OnboardingScreen}
         options={{ header: () => null }}
       />
-      {/* <Stack.Screen
+      <Stack.Screen
         name="Login"
         component={LoginScreen}
         options={{ header: () => null }}
-      /> */}
+      />
       {/* <Stack.Screen
         name="Signup"
         component={SignupScreen}

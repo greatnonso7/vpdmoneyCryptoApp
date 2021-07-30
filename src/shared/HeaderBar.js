@@ -3,7 +3,7 @@ import { View, Text } from 'react-native';
 
 import { COLORS, FONTS, SIZES } from '../constants';
 
-const HeaderBar = ({ title, containerStyle }) => {
+const HeaderBar = ({ title, containerStyle, textStyle }) => {
   return (
     <View
       style={{
@@ -13,7 +13,9 @@ const HeaderBar = ({ title, containerStyle }) => {
         ...containerStyle,
       }}
     >
-      <Text style={{ color: COLORS.white, ...FONTS.largeTitle }}>{title}</Text>
+      <Text style={{ color: COLORS.white, ...FONTS.largeTitle, ...textStyle }}>
+        {title}
+      </Text>
     </View>
   );
 };
